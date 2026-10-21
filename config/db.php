@@ -1,9 +1,9 @@
 <?php
-$host     = getenv('DB_HOST') ?: 'gateway01.ap-northeast-1.prod.aws.tidbcloud.com'; // Your TiDB host
+$host     = getenv('DB_HOST');
 $port     = getenv('DB_PORT') ?: 4000;
 $dbname   = getenv('DB_NAME') ?: 'test';
-$username = getenv('DB_USER') ?: '2hX7b3ZSP1ZKzgC.root';
-$password = getenv('DB_PASS') ?: 'KdFWjpsGuVkB94NE';
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
 
 try {
     $options = [
