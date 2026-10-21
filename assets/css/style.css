@@ -296,3 +296,113 @@ tbody tr:hover {
   background-color: red;
   transform: translateY(-3px);
 }
+
+/* Other device support */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  header h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+  }
+  .back-button {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .back-button button {
+    position: static;
+    margin: 0;
+    width: auto;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 20px 14px;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 18px 16px;
+  }
+
+  .form-container form {
+    width: 100%;
+  }
+
+  .records-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .button-add {
+    text-align: center;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .icon p {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  .icon-name {
+    font-size: 18px;
+  }
+
+  header h2 {
+    font-size: 15px;
+  }
+
+  .greet h1 {
+    font-size: 22px;
+  }
+
+  .greet p {
+    font-size: 13px;
+  }
+
+  .menu {
+    padding: 16px;
+  }
+
+  .options ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .options a {
+    text-align: center;
+    font-size: 14px;
+  }
+  .table-wrapper {
+    -webkit-overflow-scrolling: touch;
+    border-radius: 6px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 8px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 8px;
+    font-size: 11px;
+    margin-right: 2px;
+  }
+}
